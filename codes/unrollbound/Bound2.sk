@@ -1,0 +1,11 @@
+pragma options "--fe-output-code --fe-output-test ";
+int Bound(int n){
+    int t;
+    int y=??;
+    t= y* n;
+	return t;	                      
+}
+harness void main() {
+    assert Bound(1) == 31;
+    assert Bound(2) == 62;
+    }

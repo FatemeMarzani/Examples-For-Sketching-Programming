@@ -1,0 +1,11 @@
+
+int negative(int n){
+    int t;
+    int y=??;
+    t= y* n;
+	return t;	                      
+}
+harness void main() {
+    assert negative(1) == -1;
+    assert negative(2) == -2;
+    }

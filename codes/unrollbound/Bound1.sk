@@ -1,0 +1,11 @@
+pragma options "--bnd-inbits 6";
+int Bound(int n){
+    int t;
+    int y=??;
+    t= y* n;
+	return t;	                      
+}
+harness void main() {
+    assert Bound(1) == 32;
+    assert Bound(2) == 64;
+    }

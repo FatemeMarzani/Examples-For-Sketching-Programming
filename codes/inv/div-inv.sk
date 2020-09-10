@@ -1,0 +1,16 @@
+include "sketchlib/generators.skh";
+bit inv(int x,int y,int res,int i,int xx,int yy ){
+return exprBool ({x,xx,res,i,y,yy} ,{TIMES,PLUS});
+}
+harness void main(int x,int y,int res,int i,int xx,int yy,int tmp_res, int tmp_i ){
+if(x==xx && y==yy && res==0 && i==xx){
+    assert inv(x,y,res,i,xx,yy );
+    if( inv(x,y,tmp_res,tmp_i,xx,yy) && tmp_i > yy){
+        assert inv(x,y,tmp_res + 1,tmp_i - yy,xx,yy);
+  } 
+    if( inv(x,y,tmp_res,tmp_i,xx,yy) && tmp_i<=yy){
+        assert(i<y);
+    }
+}
+}
+

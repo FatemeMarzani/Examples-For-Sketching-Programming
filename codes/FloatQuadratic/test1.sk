@@ -1,0 +1,9 @@
+include "sketchlib/math.skh";
+pragma options "--be:usesnopt --be:numericalsolver";
+generator float FloatQuadratic(int a,int b,int c){
+    float x=??;
+    return a*x*x+b*x+c; 
+}
+harness void main() { 
+      assert FloatQuadratic(2,8,7) == 0.0;
+}

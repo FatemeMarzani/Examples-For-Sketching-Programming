@@ -1,0 +1,15 @@
+pragma options"--bnd-unroll-amnt 20";
+harness void swap( int xin , int yin ){
+int t , x = xin , y = yin ;
+if ( x > y ) {
+    t=x-y;
+    while ( t > 0) {
+        x = x - ??;
+        y = y + ??;
+        t = t - ??;
+        }
+    assert ( x == yin && y== xin );
+  
+    } 
+
+}

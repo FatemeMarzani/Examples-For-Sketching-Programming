@@ -1,0 +1,16 @@
+generator boolean IsSquare(int n) {
+    int i=1;
+    int sum=0;
+    int dis=??;
+    while(sum<n){
+        sum=sum+i;
+        i=i+dis;
+    }
+   if(sum==n)return true;
+   else return false;
+     }
+
+harness void main() {
+    assert IsSquare(25) == true;
+    assert IsSquare(49) == true;
+    }

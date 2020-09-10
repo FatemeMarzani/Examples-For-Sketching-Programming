@@ -1,0 +1,8 @@
+int Quadratic(int a,int b,int c){
+    int x=??;
+    return a*x*x+b*x+c;
+    
+}
+harness void main() { 
+      assert Quadratic(1,4,5) == 0;
+}

@@ -1,0 +1,13 @@
+
+int a;
+generator int Shadowing(int b){
+    a=5;
+    int a=??;
+
+    return (a*b);
+}
+harness void main() { 
+      assert Shadowing(1)==1;
+      assert Shadowing(6)==6;
+      assert Shadowing(100)==100;
+}

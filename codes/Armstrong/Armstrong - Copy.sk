@@ -1,0 +1,25 @@
+include "sketchlib/math.skh";
+generator boolean Armstrong(int n) {
+   int a; int arm=0;
+   int temp=n;
+   int hol=??;
+	while(n!=0)
+	{
+		a=n%hol;
+		arm=arm+(a*a*a);
+		n=n/hol;
+	}
+	if(arm==temp){return true;}
+	else{return false;}
+}
+	
+
+harness void main() {
+    assert Armstrong(153) == true;
+    assert Armstrong(20) == false;
+    assert Armstrong(370) == true;
+    assert Armstrong(371) == true;
+    assert Armstrong(372) == false;
+    assert Armstrong(1) == true;
+
+    }

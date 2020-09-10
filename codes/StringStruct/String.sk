@@ -1,0 +1,8 @@
+struct String{
+    int Length;
+    char[Length] contant;
+    }
+harness void main() {
+    String c =new String(Length=5,contant ="test");
+    assert c.Length==5;
+}
